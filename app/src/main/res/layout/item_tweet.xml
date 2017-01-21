@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/tweet_item_padding_bottom">
+
+    <ImageView
+        android:id="@+id/tweet_avatar_image_view"
+        android:layout_width="@dimen/tweet_item_avatar_width_and_height"
+        android:layout_height="@dimen/tweet_item_avatar_width_and_height"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_action_account_circle" />
+
+    <TextView
+        android:id="@+id/tweet_name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tweet_avatar_image_view"
+        android:layout_toRightOf="@id/tweet_avatar_image_view"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLength="15"
+        android:paddingEnd="@dimen/tweet_item_name_padding_right"
+        android:paddingRight="@dimen/tweet_item_name_padding_right"
+        android:textSize="@dimen/tweet_item_login_text"
+        tools:ignore="RtlSymmetry"
+        tools:text="name" />
+
+    <TextView
+        android:id="@+id/tweet_login_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tweet_date_text_view"
+        android:layout_toLeftOf="@+id/tweet_date_text_view"
+        android:layout_toRightOf="@+id/tweet_name_text_view"
+        android:layout_toStartOf="@+id/tweet_name_text_view"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxLength="15"
+        android:paddingBottom="@dimen/tweet_item_padding_bottom"
+        android:textSize="@dimen/tweet_item_login_text"
+        android:textStyle="bold"
+        tools:text="login" />
+
+    <TextView
+        android:id="@+id/tweet_date_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="end"
+        android:padding="2dp"
+        tools:text="date" />
+
+    <TextView
+        android:id="@+id/tweet_message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tweet_name_text_view"
+        android:layout_toEndOf="@id/tweet_avatar_image_view"
+        android:layout_toLeftOf="@+id/retweet_count_image_view"
+        android:layout_toRightOf="@+id/tweet_avatar_image_view"
+        android:layout_toStartOf="@+id/retweet_count_image_view"
+        android:textSize="@dimen/tweet_item_message_text"
+        tools:text="tweet message" />
+
+    <ImageView
+        android:id="@+id/retweet_count_image_view"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/retweet_count_text_view"
+        android:layout_toLeftOf="@+id/retweet_count_text_view"
+        android:layout_toStartOf="@+id/retweet_count_text_view"
+        android:src="@drawable/ic_retweeted" />
+
+    <TextView
+        android:id="@+id/retweet_count_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tweet_date_text_view"
+        android:layout_marginTop="15dp"
+        android:gravity="end"
+        android:padding="2dp"
+        android:textColor="@color/primary_green_dark"
+        android:textSize="@dimen/tweet_item_message_text"
+        tools:text="15" />
+
+</RelativeLayout>

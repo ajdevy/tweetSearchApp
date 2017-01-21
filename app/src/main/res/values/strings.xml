@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_tweets_found">No items found</string>
+    <string name="not_internet">No internet connection</string>
+    <string name="too_many_requests">Too many requests</string>
+    <string name="no_refresh">No refresh</string>
+    <string name="five_seconds">5 seconds</string>
+    <string name="two_seconds">2 seconds</string>
+    <string name="thirty_seconds">30 seconds</string>
+    <string name="one_minute">1 minute</string>
+</resources>
